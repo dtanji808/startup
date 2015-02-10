@@ -52,11 +52,24 @@ div {
 }
 
 /*Navigation Section */
-.top-navigation {
+.top-navigation > {
 	background-color: #fff;
+	float: right;
+	display: inline-block;
 }
 .top-navigation > .content {
 	width: 970px;
 	height: 70px;
 	margin: 0 auto;
 }
+
+.links {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+}
+
+
+
+
