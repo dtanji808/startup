@@ -50,7 +50,9 @@ body {
 div {
     border: 1px solid Chocolate;
 }
-
+.top-navigation {
+	background-color: #fff;
+}
 /*Navigation Section */
 .top-navigation > {
 	background-color: #fff;
@@ -62,14 +64,50 @@ div {
 	height: 70px;
 	margin: 0 auto;
 }
-
-.links {
+.top-navigation .logo {
+	height: 70px;
+}
+.top-navigation .links {
+	float: right;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #838994;
-	letter-spacing: 0.03em;
+	margin-top: 25px;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.top-navigation .links li{
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.top-navigation .links. active {
+	color: #4c5058;
+	font-weight: 500;
+	
+}
+
+.top-navigation .links li:hover{
+	cursor: pointer;
+	color: #33333;
+}
+.content {
+	padding: 0px 15px;
+}
+
+a {
+	color: #838994;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
 }
 
 
 
-
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+}
