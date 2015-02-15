@@ -186,6 +186,7 @@ h5 {
 	-webkit-margin-start: 0px;
 	webkit-margin-end: 0px;
 }
+
 /*.button {
 	
 	border-style: none;
@@ -277,6 +278,7 @@ h2 {
 	margin: 1.25rem 5px;
 	padding: .625rem 0;
 	text-align: center;
+	
 }
 
 i.fa.fa-twitter{
@@ -308,6 +310,15 @@ ul.icons ol {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	display: inline-block;
+	float: left;
+
+
+}
+
+ul.icons {
+	display:inline-block;
+	float: left;
 }
 
 .social .copy{
