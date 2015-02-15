@@ -57,11 +57,17 @@ table {
 	width: 100%;
 	z-index: 9999;
 	border-bottom: 1px solid #DDD;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size:100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /*Navigation Section */
 .top-navigation > {
 	background-color: #fff;
-	display: inline-block;
+	display: block;
 }
 .top-navigation > .content {
 	width: 970px;
@@ -83,8 +89,12 @@ table {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #838994;
-	margin-top: 25px;
+	margin-top: 1.7rem;
 	-webkit-font-smoothing: antialiased;
+	float: right;
+	font-size: 1.04rem;
+
+
 
 }
 
@@ -103,13 +113,19 @@ table {
 	cursor: pointer;
 	color: #33333;
 }
+
+
+
+header ul{
+	padding: 0 18%;
+	margin: 0 auto;
+	float: right;
+}
 .content {
-	padding: 0.938rem;
-	text-align: center;
 	height: 4.5rem;
 	margin: 0 auto;
 	min-width: 835px
-	display: block;
+	
 }
 
 a {
@@ -128,8 +144,12 @@ a:hover {
 }
 
 .content{
+	height: 4.5rem;
 	margin: 0 auto;
-	padding: 0 18%;
+	margin-top:  0px;
+	margin-right: auto;
+	padding: .938rem;
+	min-width: 37.5rem;
 }
 
 
@@ -139,7 +159,7 @@ a:hover {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45.938rem;
+    height: 46rem;
     overflow:auto;
 
 }
@@ -262,7 +282,7 @@ h2 {
 	float: left;
 }
 
-.fa{
+/*.fa{*/
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome:
 	font-size: inherit;
@@ -270,7 +290,7 @@ h2 {
 	-webkit-font-smoothing: antialiased;
 }
 
-.social .icons > li{
+.social .icons {
 	border-radius: 1.25rem;
 	width: 2.5rem;
 	height: 2.5rem;
@@ -287,6 +307,8 @@ i.fa.fa-twitter{
 
 i.fa.fa-facebook{
 	color: #4c66a4;
+
+
 }
 
 i.fa.fa-instagram {
@@ -296,7 +318,7 @@ i.fa.fa-instagram {
 .social {
 	text-align: center;
 }
-ul.icons ol {
+ol {
 	list-style: none;
 	display:block;
 	-webkit-margin-before: 1em;
@@ -316,15 +338,30 @@ ul.icons ol {
 
 }
 
-ul.icons {
+li {
 	display:inline-block;
-	float: left;
+	
 }
 
 .social .copy{
 	font-size: 0.9rem;
 	font-weight: 300;
 	color: #838994;
+}
+
+li.facebook {
+	text-align: center;
+}
+ 
+ul.icons{
+	display:block;
+	-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+
+
 }
 /*z-index:999;
 position: relative;
