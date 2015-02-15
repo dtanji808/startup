@@ -25,11 +25,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	text-align: center;
+	font-size: 100%;
+	vertical-align:baseline;
 }
 ol, ul {
 	list-style: none;
@@ -53,6 +56,7 @@ table {
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
+	border-bottom: 1px solid #DDD;
 }
 /*Navigation Section */
 .top-navigation > {
@@ -65,7 +69,14 @@ table {
 	margin: 0 auto;
 }
 .top-navigation .logo {
-	height: 70px;
+	height: 4.375rem;
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
 }
 .top-navigation .links {
 	float: right;
@@ -93,13 +104,32 @@ table {
 	color: #33333;
 }
 .content {
-	padding: 0px 15px;
+	padding: 0.938rem;
+	text-align: center;
+	height: 4.5rem;
+	margin: 0 auto;
+	min-width: 835px
+	display: block;
 }
 
 a {
 	color: #838994;
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
+
+}
+
+a:hover {
+	color: #333333;
+}
+
+.active a {
+	color: #333333;
+}
+
+.content{
+	margin: 0 auto;
+	padding: 0 18%;
 }
 
 
@@ -118,23 +148,46 @@ a {
 	margin-top: 17.5rem;
 	font-size: 3.125rem;
 	text-align: center;
+	display: block;
 }
 
 .introduction h1, h3 {
 	color: white;
 	font-weight: 300px;
-
+	text-align: center;
+	
 }
+
 h3 {
 	display: block;
 	-webkit-margini-before: 1em;
 	-webkit-margin-after: 1em;
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+
+
 }
 
-.buttons {
-	text-shadow: none;
+.cases img{
+	height: 160px;
+}
+
+.cases .content {
+	color: #1d1e21;
+	text-align: center;
+}
+
+h5 {
+	display: block;
+	-webkit-margin-before: 1.67em;
+	-webkit-margin-after: 1.67em;
+	-webkit-margin-start: 0px;
+	webkit-margin-end: 0px;
+}
+/*.button {
+	
 	border-style: none;
 	border-radius: 4px;
 	padding: 16px 26px;
@@ -142,6 +195,7 @@ h3 {
 	margin: 0 auto;
 	width: 20px;
 	display: block;
+	text-align: center;
 	
 	/*margin-top: 30px;*/
 	/*margin-bottom:10px;*/
@@ -152,11 +206,10 @@ h3 {
 	width: 33.3333333%;
 	display: inline-block;
 	border: 1px solid black;
-	box-sizing: border-box;
 	height: 4em;
 }
 
-button {
+.button-intro {
 	width: 9.688rem;
 	background-color: #f15a29;
 	border-color: #f15a29;
@@ -165,7 +218,102 @@ button {
 	border-radius: 4px;
 	padding: 1rem 1.5rem;
 	font-size: 1.125rem;
+	color: white;
+	line-height: 1.33;
 	text-align: center;
+	margin: 0 auto;
+}
+
+.cases h2 {
+	font-size: 2.75rem;
+	margin: 1.625rem 0 3.125rem;
+	margin-top: 1.625rem;
+	margin-right: 0px;
+	margin-bottom: 3.125rem
+	font-weight: 300px;
+}
+
+h2 {
+	display: block;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.cases .devices h3 {
+	color: black;
+	font-weight: 400;
+	font-size: 1.563rem;
+	margin: 2.5rem 0px 1.875rem;
+}
+
+.devices {
+	display: flex;
+	flex-wrap: nowrap;
+	height: 20em;
+	margin-top: 3em;
+	vertical-align: baseline;
+}
+
+.cases .devices {
+	width: 33.3333333%;
+	float: left;
+}
+
+.fa{
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome:
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+.social .icons > li{
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	display:inline-block;
+	margin: 1.25rem 5px;
+	padding: .625rem 0;
+	text-align: center;
+}
+
+i.fa.fa-twitter{
+	color: #55acee;
+}
+
+i.fa.fa-facebook{
+	color: #4c66a4;
+}
+
+i.fa.fa-instagram {
+	color: #3f729b;
+}
+
+.social {
+	text-align: center;
+}
+ul.icons ol {
+	list-style: none;
+	display:block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.social .copy{
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
 }
 /*z-index:999;
 position: relative;
