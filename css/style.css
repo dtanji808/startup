@@ -221,13 +221,19 @@ h5 {
 	/*margin-top: 30px;*/
 	/*margin-bottom:10px;*/
 
-}
+} 
+
 
 .cases .devices {
 	width: 33.3333333%;
 	display: inline-block;
 	border: 1px solid black;
 	height: 4em;
+	float: left;
+}
+
+.cases img {
+	height: 160px;
 }
 
 .button-intro {
@@ -250,7 +256,7 @@ h5 {
 	margin: 1.625rem 0 3.125rem;
 	margin-top: 1.625rem;
 	margin-right: 0px;
-	margin-bottom: 3.125rem
+	/*margin-bottom: 3.125rem*/
 	font-weight: 300px;
 }
 
@@ -277,7 +283,7 @@ h2 {
 	vertical-align: baseline;
 }
 
-.cases .devices {
+.devices {
 	width: 33.3333333%;
 	float: left;
 }
