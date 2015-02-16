@@ -63,17 +63,19 @@ table {
 	font-size:100%;
 	vertical-align: baseline;
 	box-sizing: border-box;
+	display:block;
 }
-/*Navigation Section */
-.top-navigation > {
-	background-color: #fff;
-	display: block;
+ /*Navigation Section */
+/*.top-navigation > {*/
+/*background-color: #fff;*/
+/*display: block;*/
 }
 .top-navigation > .content {
 	width: 970px;
 	height: 70px;
 	margin: 0 auto;
 }
+
 .top-navigation .logo {
 	height: 4.375rem;
 	margin: 0;
@@ -93,10 +95,8 @@ table {
 	-webkit-font-smoothing: antialiased;
 	float: right;
 	font-size: 1.04rem;
-
-
-
 }
+
 
 .top-navigation .links li{
 	display: inline-block;
@@ -117,7 +117,7 @@ table {
 
 
 header ul{
-	padding: 0 18%;
+	padding: 0 10%;
 	margin: 0 auto;
 	float: right;
 }
@@ -125,7 +125,6 @@ header ul{
 	height: 4.5rem;
 	margin: 0 auto;
 	min-width: 835px
-	
 }
 
 a {
@@ -220,8 +219,7 @@ h5 {
 	
 	/*margin-top: 30px;*/
 	/*margin-bottom:10px;*/
-
-} 
+}
 
 
 .cases .devices {
@@ -230,6 +228,8 @@ h5 {
 	border: 1px solid black;
 	height: 4em;
 	float: left;
+	
+
 }
 
 .cases img {
@@ -273,6 +273,7 @@ h2 {
 	font-weight: 400;
 	font-size: 1.563rem;
 	margin: 2.5rem 0px 1.875rem;
+
 }
 
 .devices {
@@ -281,12 +282,12 @@ h2 {
 	height: 20em;
 	margin-top: 3em;
 	vertical-align: baseline;
-}
-
-.devices {
 	width: 33.3333333%;
 	float: left;
 }
+
+
+
 
 /*.fa{*/
 	display: inline-block;
@@ -361,6 +362,7 @@ li.facebook {
  
 ul.icons{
 	display:block;
+	list-style-type: disc;
 	-webkit-margin-before: 1em;
 -webkit-margin-after: 1em;
 -webkit-margin-start: 0px;
