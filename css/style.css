@@ -1,3 +1,13 @@
+/*paul irish box-sizing*/
+html {
+	box-sizing: border-box;
+
+}
+*, *: before, *after{
+box-siging: inherit;
+}
+
+
 
 
 html, body, div, span, applet, object, iframe,
@@ -26,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
+ body {
 	line-height: 1;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -34,7 +44,7 @@ body {
 	font-size: 100%;
 	vertical-align:baseline;
 }
-ol, ul {
+ol, ul {*/
 	list-style: none;
 }
 blockquote, q {
@@ -65,11 +75,8 @@ table {
 	box-sizing: border-box;
 	display:block;
 }
- /*Navigation Section */
-/*.top-navigation > {*/
-/*background-color: #fff;*/
-/*display: block;*/
-}
+ 
+
 .top-navigation > .content {
 	width: 970px;
 	height: 70px;
@@ -91,13 +98,13 @@ table {
 
 .top-navigation .links {
 	float: right;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #838994;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-size: 16px;*/
+	/*color: #4c5058;*/
 	margin-top: 1.7rem;
-	-webkit-font-smoothing: antialiased;
-	float: right;
-	font-size: 1.04rem;
+	/*-webkit-font-smoothing: antialiased;*/
+	/*font-size: 1.04rem;*/
+	/*letter-spacing: 0.03em;*/
 	/*font-weight: 500;*/
 
 }
@@ -121,22 +128,13 @@ table {
 
 
 
-header ul{
-	padding: 0 10%;
-	margin: 0 auto;
-	float: right;
-}
-/*.content */
-	height: 3.3rem;
-	margin: 0 auto;
-	min-width: 835px
-}
 
-a {
+ 
+.links a {
 	color: #838994;
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
-	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Roboto', sans-serif;
 
 }
 
